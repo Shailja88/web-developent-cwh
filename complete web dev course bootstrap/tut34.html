@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 23px 12px;
+        /* border: 2px solid red; */
+        margin:23px 12px;
+        background-color: aqua;
+        /* box-shadow : offset-x offset-y color; */
+        /* box-shadow : offset x offset-y blur radius color; */
+        /* box-shadow  : offset-x offset-y blur-radius spread-radius color; */
+        /* box-shadow:10px 10px green ; */
+        box-shadow:10px 10px 10px green ;
+        /* box-shadow:10px 10px 10px 10px green */
+        /* box-shadow: -7px -5px 10px 34px rgba(164, 38, 173, 0.5); */
+
+ box-shadow: inset 3px 5px green ;
+    }
+    .card h2{
+/* text-shadow:1px 1px red ; */
+text-shadow:1px 1px 1px red ;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2>card1</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit asperiores necessitatibus laboriosam
+                ex ab rem amet consectetur eaque recusandae consequatur enim nulla, veniam non labore, accusamus
+                deserunt explicabo! Aperiam eaque ratione quas, sint laborum, nesciunt officiis molestias nemo delectus
+                ducimus, id veniam placeat voluptatum eius.
+            </p>
+        </div>
+        <div class="card" id="car-2">
+            <h2>card2</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita, eum magni reprehenderit tempore
+            esse alias ea reiciendis facere maiores id dolorum nostrum nemo! Laudantium iure ullam magni iusto sint,
+            voluptatibus enim corrupti nam perferendis molestiae, mollitia maiores beatae laboriosam non itaque illum
+            incidunt quo!
+        </div>
+        <div class="card" id="car-3">
+            <h2>card3
+               
+            </h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga et facere error repellat veritatis
+            accusamus dolorem, eius dicta accusantium sit aspernatur dolor incidunt ducimus odit reprehenderit eum
+            rerum pariatur aperiam aliquid unde explicabo a quos. Dolores, voluptates. Iste veniam ratione veritatis
+            tempore error nihil ut?
+        </div>
+    </div>
+</body>
+
+</html>

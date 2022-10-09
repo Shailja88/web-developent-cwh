@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+        *{
+            box-sizing:border-box ;
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: #e097b8;
+        }
+.container{
+    background-color: #e8bce9;
+    border:3px solid rgb(64,6,119);
+    padding: 32px;
+    margin:23px;
+    /* We can set padding/margin for top, bottom,left and right like this. */
+    /* padding-top: 79px;
+    padding-bottom: 79px;
+    padding-left: 34px;
+    padding-right: 32px; */
+    /* padding/margin patteren :top right bottom left  */
+    /* padding:23px 56px 6px 78px; */
+    border-radius: 23px;
+    width:523px;
+    box-sizing:border-box;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A blanditiis voluptatum quam delectus asperiores ducimus, itaque ab magnam voluptate quaerat eum. Mollitia, porro.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A blanditiis voluptatum quam delectus asperiores ducimus, itaque ab magnam voluptate quaerat eum. Mollitia, porro.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A blanditiis voluptatum quam delectus asperiores ducimus, itaque ab magnam voluptate quaerat eum. Mollitia, porro.</p>
+    </div>
+</body>
+</html>

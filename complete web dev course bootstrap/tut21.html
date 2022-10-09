@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <style>
+        *{
+
+        }
+        body{
+            font-family: 'Oleo Script Swash Caps';
+        }
+.container{
+width:900px;
+border:3px solid purple;
+background-color: sandybrown;
+margin:33px auto;
+}
+.item{
+border:3px solid gray;
+margin:12px 3px;
+padding:12px 3px;
+background:rgb(230, 213, 181);
+
+}
+#fruit{
+float: left;
+width:48%;
+
+}
+#computer{
+    float: left;
+width:48%;
+
+}
+#stationary{
+    /* float: left; */
+width:100%;
+/* clear:both; */
+clear:left;
+}
+p,h3{
+    /* text-align:right;
+    text-align:left;
+    text-align:center; */
+    text-align:justify;
+}
+h1{
+    margin:auto;
+    width 455px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>FRUITS</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet inventore molestias recusandae labore rerum, dolore excepturi incidunt facilis temporibus iure, voluptate assumenda expedita officia itaque optio vero, dolores quisquam. Facere! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, aut corporis! Et, saepe, quae, enim tenetur quasi aspernatur odit aliquam distinctio officiis sed adipisci id assumenda explicabo exercitationem dolor vel sapiente odio ratione expedita?</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>COMPUTER</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet inventore molestias recusandae labore rerum, dolore excepturi incidunt facilis temporibus iure, voluptate assumenda expedita officia itaque optio vero, dolores quisquam. Facere!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga neque expedita, eveniet minima deleniti corporis error ratione? Libero, ipsum animi? Nihil asperiores repellat libero! Voluptatum, veritatis? Est dolor laboriosam harum fuga deleniti ipsam hic?
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>STATIONARY</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet inventore molestias recusandae labore rerum, dolore excepturi incidunt facilis temporibus iure, voluptate assumenda expedita officia itaque optio vero, dolores quisquam. Facere!</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>STATIONARY</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet inventore molestias recusandae labore rerum, dolore excepturi incidunt facilis temporibus iure, voluptate assumenda expedita officia itaque optio vero, dolores quisquam. Facere!</p>
+        </div>
+    </div>
+</body>
+</html>
