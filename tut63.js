@@ -1,0 +1,73 @@
+// console.log("Hello World");
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+//   res.end('Hello World');
+  res.end(`<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pseudo Selectors and more designing</title>
+      <style>
+  .container{
+      border:2px solid red;
+      background-color:rgb(223,245,201);
+      padding:34px;
+      margin:34px auto;
+      width:666px;
+  }
+  a{
+      text-decoration: none;
+      color:rgb(0, 0, 0);
+  }
+  a:hover{
+      color:rgb(42, 19, 19);
+      background-color: yellow;
+     
+  }
+  a.visited{
+  background-color:yellow;
+  }
+  a.active{
+      color:darkblue;
+  }
+  .btn{
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      background-color: crimson;
+      padding :6px;
+      border:none;
+      cursor:pointer;
+      font-size:14px;
+      border-radius: 4px;
+  }
+  .btn:hover{
+  color:darkgoldenrod;
+  background-color: green;
+  border:2px solid black;
+  }
+      </style>
+  </head>
+  <body>
+      <div class="container" id="cont1">
+          <h3>This is my heading</h3>
+          <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi adipisci veniam corporis rerum ad quasi, dolorem labore libero nemo perspiciatis iure natus voluptatem dolores ut id velit vitae consequuntur quae aperiam?
+          </p>
+          <a href="http://facebook.com" class="btn">Read more</a>
+          <button class="btn">Contact us</button>
+      </div>
+  </body>
+  </html>`);
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});

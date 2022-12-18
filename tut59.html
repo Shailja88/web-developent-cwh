@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Dates</title>
+</head>
+<style>
+    .container{
+        font-size:23px ;
+        background-color:rgb(255 10 10 / 54%);
+        border:2px solid grey;
+        padding:34px;
+        margin:4px;
+        text-align: center;
+
+    }
+    #time{
+        font-weight: bold;
+    }
+</style>
+<body>
+   <div class="container">
+
+    Current time is <span id="time"></span>
+
+   </div> 
+   <script>
+    console.log("This is date and time tutorial ");
+    let dt=new Date();
+    console.log(dt);
+    let now=new Date(1000);
+    console.log(now);
+    // let newDate=new Date(year, month,date,hours,minutes,seconds,milliseconds);
+    let newDate=new Date(3020,4,6,9,3,2,34);
+//  let newDate=new Date("2029-09-30");
+ console.log(newDate);
+ let yr=newDate.getFullYear();
+ console.log("This year is ",yr);
+ let dat=newDate.getDate();
+ console.log("This date is",dat);
+ let mn=newDate.getMonth();
+ console.log("This month is",mn);
+ let hours=newDate.getHours();
+ console.log("This hours is ",hours);
+
+ newDate.setDate(5);
+ newDate.setDate(34);//automatically corrected the date as 34 is greater than 29 28 30 31;
+ console.log(newDate);
+ newDate.setMinutes(23);
+ setInterval(updateTime,1000);
+ function updateTime(){
+    time.innerHTML = new Date();
+ }
+   </script>
+</body>
+</html>

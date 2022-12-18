@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries </title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer ';
+    }
+
+    @media only screen and (max-width:300px) {
+        body {
+            background-color: rgb(124, 247, 247);
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+        aside{
+    display: none;
+}
+.container{
+grid-template-areas:
+    'navbar navbar navbar navbar'
+    'section section section section'
+    'aside aside aside aside'
+    'footer footer footer footer ';
+}
+    }
+
+    @media only screen and (min-width:300px)and (max-width:500px) {
+        body {
+            background-color: pink;
+        }
+        
+        .container {
+
+grid-template-areas:
+    'navbar navbar navbar navbar'
+    'section section section section'
+    'aside aside aside aside'
+    'footer footer footer footer ';
+}
+aside{
+    display: none;
+}
+span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (min-width:500px)and (max-width:800px) {
+        body {
+            background-color: greenyellow;
+        }
+
+        .container {
+
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (min-width:800px) {
+        body {
+            background-color: rgb(216, 143, 198);
+        }
+    }
+
+    .bdr {
+        border: 2px solid black;
+        padding: 10px 23px;
+        background-color: wheat;
+    }
+
+    nav {
+        grid-area: navbar;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+        <span>HOME</span>
+           <span>ABOUT</span>
+           <span>SERVICES</span>
+           <span>CONTACT </span>
+        </nav>
+        <section class="bdr">
+            <h2>
+                LEARN CSS IN HINDI
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti cum repudiandae? Provident cumque enim facilis ullam laborum exercitationem veritatis, ratione possimus suscipit distinctio? Nulla aspernatur vero commodi, dolore blanditiis nihil quo facilis perferendis consequuntur tenetur aut velit veniam dignissimos, magni fuga eveniet. Autem, distinctio id. Odio pariatur fuga, ullam consectetur corrupti itaque maiores mollitia nulla consequatur aperiam laborum ab praesentium incidunt iure inventore quibusdam quis voluptatibus necessitatibus id vero. Voluptatem alias, consequatur sit quae amet dolorum adipisci beatae minima, molestias, distinctio sapiente quis. Consequatur magni corrupti fugiat. Quos dolorum sed recusandae obcaecati! Quibusdam fugit nobis nihil quisquam soluta animi.</p>
+        </section>
+        <aside class="bdr">
+            <h1>MORE ABOUT US </h1>
+        </aside>
+    </div>
+    <footer class="bdr">
+        Copyright CodeWithGenie 2022
+    </footer>
+</body>
+
+</html>
